@@ -1,5 +1,4 @@
 def add_hall(halls):
-    print("\n--- Добавление кинозала ---")
     name = input("Название зала: ").strip()
     if not name:
         print("Ошибка: Название не может быть пустым.")
@@ -18,7 +17,6 @@ def add_hall(halls):
     print(f"Зал '{name}' добавлен (ID: {new_id}).")
 
 def show_halls(halls):
-    print("\n--- Список залов ---")
     if not halls:
         print("Список пуст.")
         return
