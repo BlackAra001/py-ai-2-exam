@@ -1,5 +1,4 @@
 def add_session(sessions, movies, halls):
-    print("\n--- Создание сеанса ---")
     if not movies or not halls:
         print("Ошибка: Сначала добавьте фильмы и залы.")
         return
@@ -34,7 +33,6 @@ def add_session(sessions, movies, halls):
     print(f"Сеанс успешно создан (ID: {new_id}).")
 
 def show_sessions(sessions, movies, halls):
-    print("\n--- Расписание сеансов ---")
     if not sessions:
         print("Расписание пусто.")
         return
