@@ -1,5 +1,4 @@
 def add_movie(movies):
-    print("\n--- Добавление фильма ---")
     title = input("Название: ").strip()
     if not title:
         print("Ошибка: Название не может быть пустым.")
@@ -18,7 +17,6 @@ def add_movie(movies):
     print(f"Фильм '{title}' добавлен (ID: {new_id}).")
 
 def show_movies(movies):
-    print("\n--- Список фильмов ---")
     if not movies:
         print("Список пуст.")
         return
@@ -26,7 +24,6 @@ def show_movies(movies):
         print(f"ID: {m['id']} | {m['title']} | {m['genre']} | {m['duration']} мин.")
 
 def delete_movie(movies):
-    print("\n--- Удаление фильма ---")
     if not movies:
         print("Список пуст.")
         return
