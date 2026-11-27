@@ -1,7 +1,7 @@
-import movies
-import halls
-import sessions
-import bookings
+from movies import add_movies
+from halls import add_halls
+from sessions import add_sessions
+from bookings import add_bookings
 
 def main():
     movies_list = []
