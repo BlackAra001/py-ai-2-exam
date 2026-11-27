@@ -1,8 +1,8 @@
-from movies import add_movie
-from halls import add_hall
-from sessions import add_session
-from bookings import add_booking
 
+from movies import add_movie, show_movies, delete_movie
+from halls import add_hall, show_halls
+from sessions import add_session, show_sessions
+from bookings import add_booking, show_bookings, cancel_booking
 def main():
     movies_list = []
     halls_list = []
