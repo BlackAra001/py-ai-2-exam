@@ -1,5 +1,4 @@
 def add_booking(bookings, sessions, halls):
-    print("\n--- Бронирование ---")
     if not sessions:
         print("Нет сеансов.")
         return
@@ -46,7 +45,6 @@ def add_booking(bookings, sessions, halls):
     print(f"Место {row}-{seat} забронировано для {customer}.")
 
 def show_bookings(bookings, sessions):
-    print("\n--- Бронирования ---")
     if not bookings:
         print("Бронирований нет.")
         return
@@ -56,7 +54,6 @@ def show_bookings(bookings, sessions):
         print(f"ID: {b['id']} | {b['customer_name']} | Сеанс: {date_str} | Ряд: {b['row']} | Место: {b['seat']}")
 
 def cancel_booking(bookings):
-    print("\n--- Отмена брони ---")
     if not bookings:
         print("Броней нет.")
         return
