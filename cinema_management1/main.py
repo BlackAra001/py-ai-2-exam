@@ -25,17 +25,27 @@ def main():
         
         choice = input("Выберите действие: ")
 
-        if choice == '1': movies.add_movie(movies_list)
-        elif choice == '2': movies.show_movies(movies_list)
-        elif choice == '3': movies.delete_movie(movies_list)
-        elif choice == '4': halls.add_hall(halls_list)
-        elif choice == '5': halls.show_halls(halls_list)
-        elif choice == '6': sessions.add_session(sessions_list, movies_list, halls_list)
-        elif choice == '7': sessions.show_sessions(sessions_list, movies_list, halls_list)
-        elif choice == '8': bookings.add_booking(bookings_list, sessions_list, halls_list)
-        elif choice == '9': bookings.show_bookings(bookings_list, sessions_list)
-        elif choice == '10': bookings.cancel_booking(bookings_list)
-        elif choice == '0':
+        if choice == "1":
+            add_movie(movies_list)
+        elif choice == "2":
+            show_movies(movies_list)
+        elif choice == "3":
+            delete_movie(movies_list)
+        elif choice == "4":
+            add_hall(halls_list)
+        elif choice == "5":
+            show_halls(halls_list)
+        elif choice == "6":
+            add_session(sessions_list, movies_list, halls_list)
+        elif choice == "7":
+            show_sessions(sessions_list, movies_list, halls_list)
+        elif choice == "8":
+            add_booking(bookings_list, sessions_list, halls_list)
+        elif choice == "9":
+            show_bookings(bookings_list, sessions_list)
+        elif choice == "10":
+            cancel_booking(bookings_list)
+        elif choice == "0":
             print("Выход из программы...")
             break
         else:
